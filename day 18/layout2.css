@@ -1,0 +1,36 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+html,body{
+     height: 100%;
+     width: 100%;
+}
+main{
+     height: 100%;
+     width: 100%;
+     background-color: black;
+     display: grid;
+     grid-template-columns: 200px 1fr;
+     grid-template-rows: 60px 180px 1fr;
+     grid-template-areas: "header header"
+                         "aside section"
+                         "figure figure";
+}
+header{
+     background-color: red;
+     grid-area: header;
+}
+aside{
+     background-color: blue;
+     grid-area: aside;
+}
+section{
+     background-color: darkcyan;
+     grid-area: section;
+}
+figure{
+     background-color: lightcoral;
+     grid-area: figure;    
+}
