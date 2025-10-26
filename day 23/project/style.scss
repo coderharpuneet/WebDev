@@ -41,7 +41,7 @@ main{
 
           .bottom{
                background-color: rgb(58, 57, 57);
-               border-radius: 10px;
+               border-radius: 0.7px;
                padding: 1.5rem;
                @include flexCol(3rem);
 
@@ -91,6 +91,47 @@ main{
                }
           }
      }
+     section#view3{
+          width: 100%;
+          padding: 1rem;
+          @include flexCol(1rem);
+          .top{
+               width: 100%;
+               img{
+                    width: 100%;
+                    border-radius: 0.7rem;
+
+               }
+          }
+          .bottom{
+               background-color: rgb(58, 57, 57);
+               border-radius: 0.7rem;
+               padding: 1rem;
+               @include flexCol(3rem);
+
+               .text{
+                    @include flexCol(0.7rem);
+                    h1{
+                         font-weight: 200;
+                         font-size: 2.5rem;
+                         text-transform: uppercase;
+                    }
+                    p{
+                         font-weight: 300;
+                         font-size: 1.5rem;
+                         opacity: 0.6;
+                         line-height: 1.5;
+                         
+                    }
+                    button{
+                         width: fit-content;
+                         border: none;
+                         padding: 0.7rem 1rem;
+                         border-radius: 0.5rem;
+                    }
+               }
+          }
+     }
 
 }
 
@@ -122,6 +163,26 @@ main{
           section#view2{
                flex-direction: row;
                padding: 1rem 4rem;
+          }
+
+          section#view3{
+               flex-direction: row-reverse;
+               .top, .bottom{
+                    width: 50%;
+               }
+               .bottom{
+                    justify-content: space-between;
+                    padding: 3rem;
+
+                    .paragraphs{
+                         display: flex;
+                         gap: 2rem;
+
+                         p{
+                              font-size: 1rem;
+                         }
+                    }
+               }
           }
      }
 }
