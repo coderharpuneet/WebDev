@@ -1,0 +1,127 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+html,body{
+     height: 100%;
+     width: 100%;
+}
+body{
+     background-color: #1d1d1d;
+     color: white;
+}
+@mixin flexCol($gap:0rem){
+     display: flex;
+     flex-direction: column;
+     gap: $gap;
+}
+section{
+     max-width: 2000px;
+}
+main{
+     width: 100%;
+     @include flexCol(0rem);
+     align-items: center;
+
+
+     section#view1{
+          width: 100%;
+          @include flexCol(1rem);
+          padding: 20px;
+
+          .top{
+               width: 100%;
+
+               img{
+                    width: 100%;
+                    border-radius: 10px;
+               }
+          }
+
+          .bottom{
+               background-color: rgb(58, 57, 57);
+               border-radius: 10px;
+               padding: 1.5rem;
+               @include flexCol(3rem);
+
+               .text{
+                    @include flexCol(0.7rem);
+                    h1{
+                         font-weight: 200;
+                         font-size: 2.5rem;
+                         text-transform: uppercase;
+                    }
+                    p{
+                         font-weight: 300;
+                         font-size: 1.5rem;
+                         opacity: 0.6;
+                         line-height: 1.5;
+                         
+                    }
+                    button{
+                         width: fit-content;
+                         border: none;
+                         padding: 0.7rem 1rem;
+                         border-radius: 0.5rem;
+                    }
+               }
+          }
+     }
+
+     section#view2{
+          @include flexCol(2.5rem);
+          width: 100%;
+          padding: 1rem;
+
+          .top, .bottom{
+               display: flex;
+               width: 100%;
+               justify-content: space-around;
+          }
+          .element{
+               text-align: center;
+               @include flexCol(0.2rem);
+               small{
+                    opacity: 0.6;
+               }
+               h2{
+                    font-size: 2rem;
+                    font-weight: 300;
+               }
+          }
+     }
+
+}
+
+@media (min-width:900px){
+     main{
+
+          section#view1{
+               flex-direction: row;
+               padding: 1rem 4rem;
+               .top, .bottom{
+                    width: 50%;
+               }
+               .bottom{
+                    justify-content: space-between;
+                    padding: 3rem;
+                    .text{
+                         gap: 1.5rem;
+                         h1{
+                              font-size: 3.5rem;
+                         }
+                         p{
+                              width: 60%;
+                              font-size: 1rem;
+                         }
+                    }
+               }
+
+          }
+          section#view2{
+               flex-direction: row;
+               padding: 1rem 4rem;
+          }
+     }
+}
