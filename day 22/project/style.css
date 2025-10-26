@@ -17,6 +17,7 @@ main {
   grid-template-columns: 1.5fr 1fr 1fr 1fr;
   grid-template-areas: "left top top top" "left bottom1 bottom2 bottom3";
   gap: 20px;
+  padding: 20px;
 }
 
 section {
