@@ -7,6 +7,7 @@
 html,body{
      height: 100%;
      width: 100%;
+     background-color: antiquewhite;
 }
 #main{
      width: 100%;
@@ -65,19 +66,30 @@ html,body{
      /* height: 250px; */
 }
 
-#img1{
-     height: 300px;
-     top: 45%;
-     left: 60%;
+#img1 {
+    height: 270px;
+    top: 42%;
+    left: 56%;
+    z-index: 3;
+    border-radius: 12px;
+    box-shadow: 0px 8px 32px rgba(0,0,0,0.15);
 }
-#img2{
-     height: 175px;
-     width: 150px;
-     top: 70%;
-     left: 55%;
+#img2 {
+    height: 170px;
+    width: 145px;
+    top: 56%;
+    left: 67%;
+    z-index: 2;
+    border-radius: 8px;
+    box-shadow: 0px 4px 24px rgba(0,0,0,0.12);
+    transform: rotate(15deg);
 }
-#img3{
-     height: 175px;
-     top: 60%;
-     left: 48%;
+#img3 {
+    height: 150px;
+    top: 51%;
+    left: 52%;
+    z-index: 4;
+    border-radius: 10px;
+    box-shadow: 0px 6px 22px rgba(0,0,0,0.11);
+    transform: rotate(-7deg);
 }
