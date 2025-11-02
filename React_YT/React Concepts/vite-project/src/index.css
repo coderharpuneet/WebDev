@@ -1,0 +1,44 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+html,body{
+     height: 100%;
+     width: 100%;
+     font-family: 'Poppins', sans-serif;
+     background-color: black;
+}
+.parent{
+     padding: 20px;
+     display: flex;
+     flex-wrap: wrap;
+}
+.card{
+     width: 300px;
+     color: white;
+     border: 1px solid white;
+     padding: 20px;
+     text-align: center;
+     border-radius: 10px;
+     background-color: #333;
+     margin: 20px;
+
+
+}
+.card button{
+     margin: 18px;
+     padding: 16px 30px;
+     background-color: white;
+     color: black;
+     border: none;
+     border-radius: 10px;
+}
+.card p{
+     margin: 20px 0;
+}
+.card img{
+     border-radius: 50%;
+     height: 150px;
+     width: 150px;
+}
