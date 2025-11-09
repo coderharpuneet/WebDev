@@ -1,0 +1,23 @@
+.head{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 20px;
+     height: 50px;
+}
+button{
+     padding: 8px 16px;
+     width: fit-content;
+     border-radius: 16px;
+     border: none;
+}
+.btn1{
+     background-color: black;
+     color: white;
+     font-weight: 500;
+}
+.btn2{
+     background-color: rgb(227, 225, 225);
+     word-spacing: 3px;
+     font-weight: 500;
+}
