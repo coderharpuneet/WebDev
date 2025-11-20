@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+#h1{
+     font-size: 40px;
+     margin: 40px;
+}
+#inc, #dec{
+     margin: 40px;
+     background-color: red;
+     padding: 8px 15px;
+}
