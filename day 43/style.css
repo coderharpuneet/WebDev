@@ -1,0 +1,23 @@
+body{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 20px;
+     flex-direction: column;
+}
+#box{
+     height: 200px;
+     width: 200px;
+     background-color: blue;
+}
+button{
+     padding: 10px 20px;
+     background-color: crimson;
+     border: none;
+     border-radius: 5px;
+     font-family: 600;
+     cursor: pointer;
+}
+button:active{
+     scale: 0.95;
+}
