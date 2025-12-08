@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from './components/Navbar'
 import Tasks from './pages/Tasks';
 
 const App = () => {
-  let tasks = [
-  {
+  const [tasks, setTasks] = useState([
+    {
     date: "2025-11-28",
     taskName: "Finish React Project Setup",
     detail: "Initialize SmartTask project using Vite and configure Tailwind CSS."
@@ -54,12 +54,13 @@ const App = () => {
     taskName: "Build Notes Page",
     detail: "Add simple notes CRUD functionality using localStorage."
   }
-];
+  ])
+  
 
   return (
     <div>
       <Navbar />
-      <Tasks tasks={tasks} />
+      <Tasks tasks={tasks} setTasks={setTasks} />
     </div>
   )
 }
