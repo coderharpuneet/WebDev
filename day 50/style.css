@@ -20,13 +20,44 @@ section{
      background-color: black;
      border-radius: 10px;
      margin: auto;
+     overflow: hidden;
 }
 .all-reels{
      height: 100%;
      width: 100%;
+     overflow: hidden;
 }
 .reel{
      height: 100%;
      width: 100%;
      position: relative;
+     background: transparent;
+     overflow: hidden;
+}
+.reel img{
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+
+}
+.reel .bottom{
+     padding: 30px 20px;
+     width: 100%;
+     background: linear-gradient(black,black);
+     position: absolute;
+     bottom: 0;
+
+}
+.bottom .user{
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     color: white;
+}
+.bottom .user img{
+     height: 40px;
+     width: 40px;
+     border-radius: 50%;
+     object-fit: cover;
+
 }
