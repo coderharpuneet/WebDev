@@ -175,3 +175,61 @@ for i in range(10):
      print(i)
 else:
      print("Break 5")
+
+
+## While Loop
+
+# Q1. Print digits of a number on seperate line
+print("Understanding While Loop")
+print("Q1. Print digits of a number on seperate line")
+num=123
+while num>0:
+     print(num%10)
+     num=num//10
+
+# Q2. Print reverse of a number
+print("Q2. Print reverse of a number")
+num=int(input("Enter the number o reverse"))
+rev=0
+while num>0:
+     rev=rev*10+num%10
+     num=num//10
+print(rev)
+
+
+
+
+# Check if a number is palindrome or not
+print("Check if a number is palindrome or not")
+num=int(input("Enter the number to check if it is palindrome or not"))
+original_num=num
+rev=0
+while num>0:
+     rev=rev*10+num%10
+     num=num//10
+print(rev)
+if original_num==rev:
+     print("The number is a palindrome")
+else:
+     print("The number is not a palindrome")
+
+
+
+
+# Random number guessing Game
+import random
+print("Random number guessing Game")
+num=random.randint(1,10)
+count=0
+while True:
+     guess=int(input("Enter your guess: "))
+     count+=1
+     if guess==num:
+          print(f"You guessed it right in {count} attempts")
+          break
+     else:
+          if guess>num:
+               print("Too high")
+          else:
+               print("Too low")
+          # print("You guessed it wrong")
