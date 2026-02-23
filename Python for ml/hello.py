@@ -233,3 +233,33 @@ while True:
           else:
                print("Too low")
           # print("You guessed it wrong")
+
+
+
+#Functions
+# def function_name(parameters):
+#      function body
+#      return value
+
+def add(a,b): # a,b are parameters
+     return a+b
+print(add(12,6)) # 12,6 are arguments
+
+
+# Types of arguments
+# 1. Positional arguments
+# 2. Keyword arguments
+# 3. Default arguments
+# 4. Variable length arguments
+
+# 1. Positional arguments
+def hello(name,age=18):
+     print(f"Hello {name}. You are {age} years old")
+hello("Astarr",20) # Positional arguments
+hello(age=20,name="Astarr") # Keyword arguments
+hello("Astarr") # Default arguments
+
+# 4. Variable length arguments
+def add(*args):
+     return sum(args)
+print(add(1,2,3,4,5))
