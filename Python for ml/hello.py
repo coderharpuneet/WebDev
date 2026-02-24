@@ -263,3 +263,131 @@ hello("Astarr") # Default arguments
 def add(*args):
      return sum(args)
 print(add(1,2,3,4,5))
+
+
+
+
+
+# Data Structure
+# Data structure in python are used to store data efficiently
+# Two types:
+# 1. In-built Data Structure
+# 2. User-defined Data Structure
+
+# In-built Data Structure
+# 1. List
+# 2. Tuple
+# 3. Set
+# 4. Dictionary
+
+# User-defined Data Structure
+# 1. Stack
+# 2. Queue
+# 3. Linked List
+# 4. Tree
+# 5. Graph
+
+
+# LIST
+
+#syntax
+a=[1,2,3,4,5]
+
+# List is MUTABLE
+# List allows duplicate values
+# List can have heterogeneous values
+# List is an ordered data structure
+
+print(a[1]) # Indexing
+print(a[1:3]) # Slicing
+print(a[1:3:1]) # Slicing with step
+print(a[3:1:-1]) # Slicing with step
+print(a[::-1]) # Reverse of a list
+
+# list traversing and methods
+list1=[1,2,3,4,5]
+# 1st method
+for i in range(len(a)):
+     print(a[i])
+
+# 2nd Method
+for ele in a:
+     print(ele)
+
+
+#Methods in list
+a.append(6)
+print(a)
+a.insert(1,6)
+print(a)
+a.extend([6,7,8])
+print(a)
+a.remove(6) # first occurence of 6 is removed
+print(a)
+a.pop(3)
+print(a)
+ind=a.index(1)
+print(ind)
+a.sort()
+count=a.count(1)
+print(count)
+b=a.copy()
+b.clear()
+
+
+
+
+
+# Some Questions on List
+# Q1. Print positive and negative elements of the list
+l=[-45,67,12,-68,90,12,-45,34]
+print("Positive elements")
+for i in l:
+     if i>=0:
+          print(i)
+print("Negative elements")
+for i in l:
+     if i<0:
+          print(i)
+
+
+# Q2. Mean of list elements
+print("Mean of list elements")
+sum=0
+for i in l:
+     sum+=i
+print(sum/len(l))
+
+# Q3. Find greatest element and print its index too.
+print("Greatest element and its index")
+greatest=l[0]
+for i in range(len(l)):
+     if l[i]>greatest:
+          greatest=l[i]
+          index=i
+print("Greatest element: ",greatest)
+print("Index of greatest element: ",index)
+
+
+# Q4. find the second greatest element
+print("Second greatest element")
+greatest=l[0]
+second_greatest=l[0]
+for i in range(len(l)):
+     if l[i]>greatest:
+          second_greatest=greatest
+          greatest=l[i]
+     elif l[i]>second_greatest and l[i]!=greatest:
+          second_greatest=l[i]
+print("Second greatest element: ",second_greatest)
+
+
+# Q5. Check if a list is sorted or not
+print("Check if a list is sorted or not")
+l=[1,2,3,4,5]
+for i in range(len(l)-1):
+     if(l[i]>l[i+1]):
+          print("The list is not sorted")
+          break
+else:
+     print("The list is sorted") 
