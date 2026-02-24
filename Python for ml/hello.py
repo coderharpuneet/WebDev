@@ -391,3 +391,42 @@ for i in range(len(l)-1):
           break
 else:
      print("The list is sorted") 
+
+
+
+
+
+
+
+#TUPLE
+#syntax
+a=(1,2,3,4,5)
+
+# Tuple is IMMUTABLE
+# Tuple allows duplicate values
+# Tuple can have heterogeneous values
+# Tuple is an ordered data structure 
+
+#Taversing in tuple
+for i in a:
+     print(i)
+
+for i in range(len(a)):
+     print(a[i]) 
+
+# Methods in tuple
+# count()
+# index()
+print(a.count(1))
+print(a.index(1))
+
+a,b,c,d=(1,2,3,4)
+print(a)
+print(b)
+print(c)
+print(d)
+
+a=(1,)
+print(type(a)) # Tuple
+a=1
+print(type(a)) # Int
