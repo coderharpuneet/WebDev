@@ -430,3 +430,41 @@ a=(1,)
 print(type(a)) # Tuple
 a=1
 print(type(a)) # Int
+
+
+# Set
+# Syntax
+s = {1, 2, 3, 4, 5}
+print(s)
+
+# Sets are mutable
+# Sets cannot have duplicates
+# Sets are unordered
+# Sets is semi-heterogeneous
+
+#How Set stores values in Python
+a={1,2,3,4,5}
+print(a)
+
+# Set Traversing
+for i in a:
+     print(i)
+
+# Set Methods
+s.add(6)
+print(s)
+s.remove(6)
+print(s)
+s.pop()
+print(s)
+s.clear()
+print(s)
+
+a={1,2,3,4,5}
+b={4,5,6,7,8}
+print(a.union(b))
+print(a.intersection(b))
+print(a.difference(b))
+print(a.symmetric_difference(b))
+print(b^a)
+ 
