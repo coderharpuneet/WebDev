@@ -468,3 +468,81 @@ print(a.difference(b))
 print(a.symmetric_difference(b))
 print(b^a)
  
+
+
+# Dictionary ->  hashmap in other languages
+d={1:"Astarr",2:"Shah Ji"}
+print(d)
+# Dictionary is mutable
+# Dictionary cannot have duplicate keys
+# Dictionary is unordered
+# Dictionary is semi-heterogeneous
+
+print(d[1])
+d[1]="Prem"
+d.update({2:"Shah Ji"})
+print(d)
+d[50]=500 # creating
+del d[50]
+print(d)
+ 
+#traversing in dictionary
+for i in d:
+     print(i,d[i])
+
+# help(dict) # to get help about dictionary
+
+# Deep and shallow copy
+# List
+a=[1,2,3,4,5]
+b=a.copy()
+b[0]=100
+print(a)
+print(b)
+
+#Dictionary
+dictio={1:"Astarr",2:"Shah Ji"}
+dictio2=dictio.copy()
+dictio2[1]="Prem"
+print(dictio)
+print(dictio2)
+
+# Dictionary Questions
+
+# Q1. Write a python script to merge two dictionaries
+print("Q1. Write a python script to merge two dictionaries")
+dict1={1:"Astarr",2:"Shah Ji"}
+dict2={3:"Prem",4:"Dhillon"}
+# dict1.update(dict2) Method 1
+
+for i in dict2:
+     dict1[i]=dict2[i] 
+print(dict1)
+
+# Q2. Write a python script to sum all the values in dictionary
+sum1={1:50,2:40,3:100}
+ans=0
+for i in sum1:
+     ans+=sum1[i]
+print(ans)
+
+# Q3. Count frequency of each elements in a list.
+lq3=[1,1,1,1,1,2,2,2,2,3,3,3,3,3,3,3,3,3,4,4,5,5,5]
+dq3={}
+for i in lq3:
+     if i in dq3.keys():
+          dq3[i]+=1
+     else:
+          dq3[i]=1
+print(dq3)
+
+
+# Q4. Write a python program to combine two dictionaries by combining values for common keys
+dq4i={10:100,20:200,40:300}
+dq4ii={40:400,50:500,60:600} 
+for i in dq4ii:
+     if i in dq4i.keys():
+          dq4i[i]+=dq4ii[i]
+     else:
+          dq4i[i]=dq4ii[i]
+print(dq4i)
