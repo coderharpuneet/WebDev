@@ -17,4 +17,16 @@ app.post('/notes', async (req, res) => {
      });
 });
 
+/**
+ * - GET /notes
+ * fetches all the notes data
+ */
+app.get('/notes',async(req,res)=>{
+     const notes=await noteModel.find(); //returns all the notes from the database in the form of an array
+     res.status(200).json({
+          message:'Notes fetched successfully',
+          notes
+     })
+})
+
 module.exports=app;
